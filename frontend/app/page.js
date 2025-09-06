@@ -91,7 +91,7 @@ export default function Home() {
               </h1>
               <p className="text-xl text-stone-600 mb-8 leading-relaxed">
                 Discover carefully curated products that make everyday life more enjoyable. 
-                From essentials to luxuries, we've got everything you need.
+                From essentials to luxuries, we&lsquo;ve got everything you need.
               </p>
               
               {user ? (
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-stone-900 mb-4">Why people love shopping with us</h2>
-            <p className="text-xl text-stone-600">We've built our reputation on these core promises</p>
+            <p className="text-xl text-stone-600">We&lsquo;ve built our reputation on these core promises</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -179,7 +179,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-stone-900 mb-3">Lightning Fast Delivery</h3>
                 <p className="text-stone-600 leading-relaxed">
-                  Same-day delivery in most cities. We know you don't like waiting, so we don't make you.
+                  Same-day delivery in most cities. We know you don&lsquo;t like waiting, so we don&lsquo;t make you.
                 </p>
                 <div className="mt-6 text-blue-600 font-medium">Usually arrives in 2-4 hours →</div>
               </div>
@@ -193,7 +193,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-stone-900 mb-3">Handpicked Quality</h3>
                 <p className="text-stone-600 leading-relaxed">
-                  Every product is personally tested by our team. If we wouldn't buy it, we won't sell it.
+                  Every product is personally tested by our team. If we wouldn&lsquo;t buy it, we won&lsquo;t sell it.
                 </p>
                 <div className="mt-6 text-emerald-600 font-medium">30-day guarantee →</div>
               </div>
@@ -225,7 +225,7 @@ export default function Home() {
                 Welcome back, {user.name}! 👋
               </h2>
               <p className="text-lg text-stone-600 mb-8">
-                Your cart is waiting, and we've got some new arrivals you might love.
+                Your cart is waiting, and we&lsquo;ve got some new arrivals you might love.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
