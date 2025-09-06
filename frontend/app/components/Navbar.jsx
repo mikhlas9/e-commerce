@@ -64,7 +64,7 @@ export default function Navbar() {
         },
       }
 
-      const { data } = await axios.get("http://localhost:5000/api/cart", config)
+      const { data } = await axios.get("https://e-commerce-8iub.vercel.app/api/cart", config)
       const count = data.reduce((total, item) => total + item.quantity, 0)
       setCartCount(count)
     } catch (error) {

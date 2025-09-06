@@ -35,7 +35,7 @@ export default function Products() {
 
   const loadItems = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/items")
+      const { data } = await axios.get("https://e-commerce-8iub.vercel.app/api/items")
       setItems(data)
       setFilteredItems(data)
     } catch (error) {

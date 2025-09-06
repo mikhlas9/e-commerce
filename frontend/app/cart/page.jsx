@@ -27,7 +27,7 @@ export default function Cart() {
         },
       }
 
-      const { data } = await axios.get("http://localhost:5000/api/cart", config)
+      const { data } = await axios.get("https://e-commerce-8iub.vercel.app/api/cart", config)
       setCartItems(data)
     } catch (error) {
       console.error("Error loading cart:", error)
@@ -47,9 +47,9 @@ export default function Cart() {
       }
 
       if (newQuantity <= 0) {
-        await axios.delete(`http://localhost:5000/api/cart/remove/${itemId}`, config)
+        await axios.delete(`https://e-commerce-8iub.vercel.app/api/cart/remove/${itemId}`, config)
       } else {
-        await axios.put("http://localhost:5000/api/cart/update", { itemId, quantity: newQuantity }, config)
+        await axios.put("https://e-commerce-8iub.vercel.app/api/cart/update", { itemId, quantity: newQuantity }, config)
       }
 
       await loadCart()
@@ -67,7 +67,7 @@ export default function Cart() {
         },
       }
 
-      await axios.delete(`http://localhost:5000/api/cart/remove/${itemId}`, config)
+      await axios.delete(`https://e-commerce-8iub.vercel.app/api/cart/remove/${itemId}`, config)
       await loadCart()
     } catch (error) {
       console.error("Error removing item:", error)

@@ -29,7 +29,7 @@ export default function ProductDetail() {
 
   const loadProduct = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:5000/api/items/${productId}`)
+      const { data } = await axios.get(`https://e-commerce-8iub.vercel.app/api/items/${productId}`)
       setProduct(data)
     } catch (error) {
       console.error("Error loading product:", error)
@@ -59,7 +59,7 @@ export default function ProductDetail() {
         },
       }
 
-      await axios.post("http://localhost:5000/api/cart/add", { itemId: productId, quantity }, config)
+      await axios.post("https://e-commerce-8iub.vercel.app/api/cart/add", { itemId: productId, quantity }, config)
       showNotification(`${quantity} ${product.name}${quantity > 1 ? 's' : ''} added to cart!`, 'success')
       
       // Dispatch custom event to update navbar cart count
